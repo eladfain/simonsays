@@ -1,0 +1,83 @@
+#circle{
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.circlepart{
+    border: 1px solid black;
+    width: 250px;
+    height: 250px;
+    position: absolute;
+}
+
+#topleft{
+    border-radius: 250px 0 0 0;
+    background-color: red;
+}
+
+#toprigth{
+    border-radius: 0 250px 0 0;
+    background-color: blue;
+    right: 0px;
+}
+
+#bottmleft{
+    border-radius: 0 0 0 250px;
+    background-color: green;
+    bottom: 0px;
+}
+
+#bottomrigth{
+    border-radius: 0 0 250px 0;
+    background-color: yellow;
+    bottom: 0px;
+    right: 0px;
+}
+
+#panel{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    z-index: 10;
+    right: 25%;
+    top: 25%;
+    position: absolute;
+    text-align: center;
+}
+
+@keyframes topleft{
+    0% {background-color:rgb(237, 183, 183) ;}
+    100% {background-color: red;}
+}
+@keyframes toprigth {
+    0% {background-color:rgb(158, 158, 219) ;}
+    100% {background-color: blue;}
+}
+@keyframes bottmleft {
+    0% {background-color:rgb(136, 180, 136) ;}
+    100% {background-color: green;}
+}
+@keyframes bottomrigth {
+    0% {background-color:rgb(174, 174, 132);}
+    100% {background-color: yellow;}
+}
+.topleftclick{
+    animation-name:topleft;
+    animation-duration: 2s;
+}
+.toprigthclick{
+    animation-name:toprigth;
+    animation-duration: 2s;
+}
+.bottmleftclick{
+    animation-name:bottmleft;
+    animation-duration: 2s;
+}
+.bottomrigthclick{
+    animation-name:bottomrigth;
+    animation-duration: 2s;
+}
